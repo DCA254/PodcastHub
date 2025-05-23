@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f8f5f0;
+    color: #333;
+}
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.landing-header {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.landing-logo {
+    max-width: 120px;
+    height: auto;
+}
+
+.landing-title {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.landing-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.podcast-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.podcast-card:first-child {
+    border-top: 5px solid #3EA055; /* Verde para Samba */
+}
+
+.podcast-card:last-child {
+    border-top: 5px solid #FF7A00; /* Laranja para Forró */
+}
+
+.podcast-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.podcast-card h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.podcast-card p {
+    color: #666;
+}
+
+.landing-footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #f0ece3;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .landing-title {
+        font-size: 1.5rem;
+    }
+    
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .podcast-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
